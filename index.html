@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud post</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+    <img src="./titulo.png" alt="um simples projeto CRUD.">
+    <h2>Poste um comentário, edite ou exclua ele.</h2>
+    </nav>
+    
+    <div class="crud">
+                <div class=" left col-md-6">
+                <!--onde vai escrever a mensagem-->
+                <form id="form" method="post">
+                    <label for="pst">Escreva um comentário:</label><br>
+                    <br>
+                    <textarea name="post" id="input" cols="30" rows="10"></textarea>
+                    <br>
+                    <div id="msg"><p></p></div><br>
+                    <button  type="submit">Postar</button>
+                </form>
+            </div>
+
+            <div class="right col-md-6">
+                <!--comentarios-->
+                <h3>Comentários:</h3>
+
+                <div class="posts" id="posts">
+                    <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, deserunt quos ipsam quasi.</p>
+                    <span class="options">
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+</body>
+</html>
